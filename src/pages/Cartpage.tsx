@@ -23,10 +23,15 @@ const CartPage: React.FC<CartPageProps> = ({ onRemoveFromCart }) => {
   };
 
   return (
-    <div className='container mx-auto p-8'>
-      <h2 className='text-3xl font-bold mb-8'>Shopping Cart</h2>
+    <div className='mt-4'>
+      <h2 className='font-bold mb-4'>Cart Items</h2>
+
       {cartItems.length === 0 ? (
-        <p className='text-lg text-gray-500'>Your cart is empty.</p>
+        <div className='flex items-center justify-center h-screen bg-gray-100'>
+          <div className='bg-white p-8 rounded-md shadow-md'>
+            <h1 className='text-2xl font-bold'>Your cart is empty.</h1>
+          </div>
+        </div>
       ) : (
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
           {cartItems.map((item: Product) => (
