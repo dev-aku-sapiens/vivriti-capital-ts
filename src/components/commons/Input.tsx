@@ -30,7 +30,7 @@ const Input: React.FC<InputProps> = ({
     <div className='relative'>
       <input
         type='text'
-        className='px-4 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-zinc-800 w-80'
+        className='px-4 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-zinc-800 w-full'
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
